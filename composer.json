@@ -1,11 +1,11 @@
 {
-    "name": "laravel/vapor-cli",
+    "name": "zchermit/vapor-cli",
     "description": "The Laravel Vapor CLI",
     "keywords": [
         "laravel",
         "vapor"
     ],
-    "homepage": "https://github.com/laravel/vapor-cli",
+    "homepage": "https://github.com/zchermit/vapor-cli",
     "license": "MIT",
     "authors": [
         {
