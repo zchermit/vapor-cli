@@ -46,7 +46,7 @@ class RunDeploymentHooksTimedOut
     public function all()
     {
         return [
-            'Ensure your application is using the most recent versions of "laravel/vapor-cli" and "laravel/vapor-core".',
+            'Ensure your application is using the most recent versions of "laravel/vapor-cli" and "zchermit/vapor-core".',
             'Review "CLI" environment logs: https://vapor.laravel.com/app/projects/'.$this->deployment->project_id.'/environments/'.$this->deployment->environment['name'].'/logs',
         ];
     }

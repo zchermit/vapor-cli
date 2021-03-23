@@ -17,7 +17,7 @@ class InjectErrorPages
     {
         Helpers::step('<options=bold>Injecting Error Pages</>');
 
-        $stubPath = $this->appPath.'/vendor/laravel/vapor-core/stubs';
+        $stubPath = $this->appPath.'/vendor/zchermit/vapor-core/stubs';
 
         if (! file_exists($this->appPath.'/503.html')) {
             $this->files->copy($stubPath.'/503.html', $this->appPath.'/503.html');

@@ -17,7 +17,7 @@ class InjectRdsCertificate
     {
         Helpers::step('<options=bold>Injecting RDS SSL Certificate</>');
 
-        $stubPath = $this->appPath.'/vendor/laravel/vapor-core/stubs';
+        $stubPath = $this->appPath.'/vendor/zchermit/vapor-core/stubs';
 
         $this->files->copy(
             $stubPath.'/rds-combined-ca-bundle.pem',

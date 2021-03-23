@@ -296,7 +296,7 @@ class DeployCommand extends Command
                 ->pipe(function ($composer) {
                     return collect($composer->get('packages', $composer));
                 })
-                ->where('name', 'laravel/vapor-core')
+                ->where('name', 'zchermit/vapor-core')
                 ->first()->version;
 
         return ltrim($version, 'v');

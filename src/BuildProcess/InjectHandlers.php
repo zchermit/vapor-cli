@@ -18,11 +18,11 @@ class InjectHandlers
     {
         Helpers::step('<options=bold>Injecting Serverless Handlers</>');
 
-        if (! is_dir($this->appPath.'/vendor/laravel/vapor-core')) {
-            Helpers::abort('Unable to find laravel/vapor-core installation.');
+        if (! is_dir($this->appPath.'/vendor/zchermit/vapor-core')) {
+            Helpers::abort('Unable to find zchermit/vapor-core installation.');
         }
 
-        $stubPath = $this->appPath.'/vendor/laravel/vapor-core/stubs';
+        $stubPath = $this->appPath.'/vendor/zchermit/vapor-core/stubs';
 
         if (Manifest::shouldSeparateVendor($this->environment)) {
             $this->files->copy($stubPath.'/runtime-with-vendor-download.php', $this->appPath.'/runtime.php');
