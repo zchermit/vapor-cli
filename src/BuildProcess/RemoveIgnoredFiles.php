@@ -55,14 +55,16 @@ class RemoveIgnoredFiles
             }
         }
 
-        $files = (new Finder())
-            ->in(Path::app().'/database')
-            ->depth('== 0')
-            ->name('*.sqlite');
+        try {
+            $files = (new Finder())
+                ->in(Path::app().'/database')
+                ->depth('== 0')
+                ->name('*.sqlite');
 
-        foreach ($files as $file) {
-            $this->files->delete($file->getRealPath());
-        }
+            foreach ($files as $file) {
+                $this->files->delete($file->getRealPath());
+            }
+        } catch (\Exception $e) {}
     }
 
     /**
